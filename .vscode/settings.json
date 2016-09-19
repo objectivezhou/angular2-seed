@@ -13,7 +13,10 @@
     "**/.hg": true,
     "**/.DS_Store": true,
     "unbundled": true,
-    "**/*/*.ngfactory.ts": true,
-    "**/*/*.shim.ts": true
-  }
+    "**/*.ngfactory.ts": true,
+    "**/*.shim.ts": true
+  },
+  "tslint.exclude": [
+    "**/*.shim.ts"
+  ]
 }

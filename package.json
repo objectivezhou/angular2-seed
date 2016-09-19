@@ -36,7 +36,7 @@
     "protractor": "protractor",
     "rimraf": "rimraf",
     "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline  --progress --profile --watch --content-base src/",
-    "server:prod": "static dist --gzip ",
+    "server:prod": "static dist --port 9000 --host-address 0.0.0.0  --gzip ",
     "server:aot": "npm run server:prod",
     "server": "npm run server:dev",
     "start": "npm run server:dev",

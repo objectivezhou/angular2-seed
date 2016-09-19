@@ -12,7 +12,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app',
   templateUrl: 'app.component.html',
   styleUrls: [
-    'app.component.scss'
+    'app.component.css'
   ]
 })
 export class App {

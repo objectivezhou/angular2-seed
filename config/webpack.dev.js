@@ -1,6 +1,3 @@
-/**
- * @author: @AngularClass
- */
 
 const helpers = require('./helpers');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
@@ -11,7 +8,7 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
  */
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
-
+const WatchIgnorePlugin = require("webpack").WatchIgnorePlugin;
 /**
  * Webpack Constants
  */
@@ -98,7 +95,12 @@ module.exports = function(options) {
     },
 
     plugins: [
-
+      /**
+       * ignore scss watch
+       */
+      new WatchIgnorePlugin([
+            /\.scss$/,
+      ]),
       /**
        * Plugin: DefinePlugin
        * Description: Define free variables.

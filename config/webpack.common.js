@@ -144,11 +144,11 @@ module.exports = function(options) {
           test: /\.json$/,
           loader: 'json-loader'
         },
-        {
-          test: /\.scss$/,
-          exclude: /node_modules/,
-          loaders: ['to-string-loader', 'css-loader', 'sass-loader']
-        },
+        // {
+        //   test: /\.scss$/,
+        //   exclude: /node_modules/,
+        //   loaders: ['to-string-loader', 'css-loader', 'sass-loader']
+        // },
 
         /*
          * to string and css loader support for *.css files

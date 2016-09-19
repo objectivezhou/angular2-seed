@@ -67,3 +67,6 @@ npm-debug.log
 *.ngfactory.ts
 /unbundled
 *.shim.ts
+.sass-cache
+npm-debug.log.*
+**/*.css

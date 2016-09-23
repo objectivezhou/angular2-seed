@@ -5,7 +5,9 @@
     "**/bower_components": true,
     "unbundled": true,
     "**/*/*.ngfactory.ts": true,
-    "**/*/*.shim.ts": true
+    "**/*/*.shim.ts": true,
+    ".sass-cache": true,
+    "dist": true
   },
   "files.exclude": {
     "**/.git": true,
@@ -14,7 +16,8 @@
     "**/.DS_Store": true,
     "unbundled": true,
     "**/*.ngfactory.ts": true,
-    "**/*.shim.ts": true
+    "**/*.shim.ts": true,
+    ".sass-cache": true
   },
   "tslint.exclude": [
     "**/*.shim.ts"

@@ -6,44 +6,18 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "removeComments": true,
-    "pretty": true,
-    "declaration": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "noEmitHelpers": true,
-    "strictNullChecks": false,
-    "baseUrl": "./src",
-    "outDir": "./unbundled",
-    "lib": [
-      "dom",
-      "es6"
-    ],
-    "types": [
-      "hammerjs",
-      "jasmine",
-      "node",
-      "protractor",
-      "selenium-webdriver",
-      "source-map",
-      "uglify-js",
-      "webpack"
-    ]
+    "strictNullChecks": false
   },
   "exclude": [
     "node_modules",
     "dist"
   ],
-  "files": [
-      "src/app/app.module.ts",
-      "src/custom-typings.d.ts"
-  ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
     "useWebpackText": true
   },
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "atom": { "rewriteTsconfig": false },
   "angularCompilerOptions": {
     "genDir": ".",
     "skipMetadataEmit" : true

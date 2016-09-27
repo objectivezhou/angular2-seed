@@ -11,7 +11,7 @@
   "homepage": "",
   "license": "MIT",
   "scripts": {
-    "ngc": "ngc -p ./tsconfig.aot.json",
+    "ngc": "ngc -p ./tsconfig.aot.json --locale=en-US",
     "build:aot": "export NODE_ENV=aot;npm run ngc && webpack --progress --profile",
     "build:dev": "export NODE_ENV=dev;webpack --progress --profile",
     "build:prod": "export NODE_ENV=prod;webpack --progress --profile --bail",

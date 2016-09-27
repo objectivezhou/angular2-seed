@@ -28,7 +28,7 @@
     "rimraf": "rimraf",
     "sass": "sass src/app -t compressed --sourcemap=none --update --force",
     "sass:watch": "sass src/app -t compressed --sourcemap=none --watch",
-    "server:dev": "export NODE_ENV=dev;webpack-dev-server  --inline  --progress --profile",
+    "server:dev": "export NODE_ENV=dev;webpack-dev-server  --inline  --profile",
     "server:prod": "static dist/prod --port 9000 --host-address 0.0.0.0  --gzip",
     "server:aot": "static dist/aot --port 10000 --host-address 0.0.0.0  --gzip",
     "server": "npm run server:dev",
